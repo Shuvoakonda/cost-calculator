@@ -1,0 +1,100 @@
+/*@font-face{
+  font-family:'ploni';
+  font-weight:200; !*(ultralight)*!
+  font-style: normal;
+  font-display: auto; 
+  src: url('./ploni/ploni-ultralight-aaa.woff2') format('woff2');
+}*/
+@font-face {
+    font-family: 'ploni';
+    font-weight: 300;
+    /*(light)*/
+    font-style: normal;
+    font-display: swap;
+    src: url('./ploni/ploni-light-aaa.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ploni';
+    font-weight: 400;
+    /*(regular)*/
+    font-style: normal;
+    font-display: swap;
+    src: url('./ploni/ploni-regular-aaa.woff2') format('woff2');
+}
+
+/*
+  @font-face{
+    font-family:'ploni';
+    font-weight:500;  
+    font-style: normal;
+    font-display: swap;
+    src: url('./ploni/ploni-medium-aaa.woff2') format('woff2');
+  }
+  */
+/*
+  @font-face{
+    font-family:'ploni';
+    font-weight:600;  
+    font-style: normal;
+    font-display: swap;
+    src: url('./ploni/ploni-demibold-aaa.woff2') format('woff2');
+  }
+  */
+@font-face {
+    font-family: 'ploni';
+    font-weight: 700;
+    /*(bold)*/
+    font-style: normal;
+    font-display: swap;
+    src: url('./ploni/ploni-bold-aaa.woff2') format('woff2');
+}
+
+/*@font-face{
+    font-family:'ploni';
+    font-weight:800; !*(ultrabold)*!
+    font-style: normal;
+    font-display: auto;
+    src: url('./ploni/ploni-ultrabold-aaa.woff2') format('woff2');
+  }*/
+/*
+  @font-face{
+    font-family:'ploni';
+    font-weight:900; !*(black)*!
+    font-style: normal;
+    font-display: auto;
+    src: url('./ploni/ploni-black-aaa.woff2') format('woff2');
+  }*/
+
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./heebo/heebo-normal-400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('./heebo/heebo-normal-300.woff2') format('woff2');
+}
+
+/*
+  @font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('./heebo/heebo-normal-500.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./heebo/heebo-normal-700.woff2') format('woff2');
+  }
+  */
