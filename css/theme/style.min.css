@@ -262,7 +262,7 @@ body {
 
 .extended-label,
 a {
-    color: #0f313e;
+    color: #000000;
     text-decoration: none
 }
 
@@ -2073,7 +2073,7 @@ input[disabled]+label i {
     content: '';
     width: .5em;
     height: .5em;
-    background-image: url("../img/icon-phone.svg");
+    background-image: url("");
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -2096,7 +2096,7 @@ input[disabled]+label i {
 }
 
 .site-header .quick-call-container .quick-call-number .whatsapp-logo {
-    width: 3.2rem
+    width: 3rem
 }
 
 @media screen and (max-width:1270px) {
@@ -2110,7 +2110,7 @@ input[disabled]+label i {
 }
 
 .site-header .quick-call-container .contact-action {
-    border: solid .1rem #c2e0ec;
+    border: solid .1rem #ff890b;
     background-color: #fff;
     line-height: 1;
     height: 4.2rem;
@@ -2142,14 +2142,14 @@ input[disabled]+label i {
 }
 
 .site-header .quick-call-container .contact-action[data-button='1'] {
-    background-color: #065a7d;
-    color: #fff;
+    background-color: #fff;
+    color: #000000;
     box-shadow: 0 0 .6rem #00a9e5;
     border-color: transparent
 }
 
 .site-header .quick-call-container .contact-action[data-button='1']:after {
-    border: solid .2rem #00a9e5;
+    border: solid .2rem #f0ce17;
     top: .3rem;
     right: .3rem;
     bottom: .3rem;
@@ -2157,9 +2157,9 @@ input[disabled]+label i {
 }
 
 html:not(.mobile):not(.tablet) .site-header .quick-call-container .contact-action[data-button='1']:hover {
-    background-color: #006b94;
-    color: #fff;
-    box-shadow: 0 0 1.2rem rgba(0, 169, 229, .5)
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 1.2rem rgba(236, 167, 5, 0.5)
 }
 
 html:not(.mobile):not(.tablet) .site-header .quick-call-container .contact-action[data-button='1']:hover:after {
@@ -2171,7 +2171,7 @@ html:not(.mobile):not(.tablet) .site-header .quick-call-container .contact-actio
 }
 
 .site-header .quick-call-container .contact-action[data-button='2']:after {
-    border: solid .2rem #4ec9f5;
+    border: solid .2rem #f0ce17;
     top: .3rem;
     right: .3rem;
     bottom: .3rem;
@@ -2185,7 +2185,7 @@ html:not(.mobile):not(.tablet) .site-header .quick-call-container .contact-actio
 }
 
 html:not(.mobile):not(.tablet) .site-header .quick-call-container .contact-action[data-button='2']:hover:after {
-    border-color: #77dbff
+    border-color: #feaa03
 }
 
 @media screen and (max-width:767px) {
@@ -2200,9 +2200,9 @@ html:not(.mobile):not(.tablet) .site-header .quick-call-container .contact-actio
 }
 
 html:not(.mobile):not(.tablet) .site-header .quick-call-container .contact-action:hover {
-    border-color: #00a9e5;
+    border-color: #ea8c13;
     background-color: #ecfaff;
-    color: #00a9e5
+    color: #f17d09 !important;
 }
 
 .site-header .quick-call-container .contact-actions-wrapper {
@@ -3644,8 +3644,8 @@ screen and (max-width:767px) and (max-width:767px) and (orientation:landscape) {
 }
 
 body.home .page-top:after {
-    height: 65vh;
-    background-image: linear-gradient(to top, #fff, #c8f0ff)
+    height: 70vh;
+    background-image: linear-gradient(to top, #eac70900, #ffc000e3);
 }
 
 @media screen and (orientation:portrait) {
@@ -3804,7 +3804,8 @@ body.home .page-top .site-title {
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 1
+    z-index: 1;
+    padding-top: 30px;
 }
 
 @media screen and (max-height:900px) and (orientation:landscape) {
@@ -3893,8 +3894,8 @@ body.home .page-top .site-title {
         position: absolute;
         width: 100vw;
         overflow: hidden;
-        height: 26rem;
-        bottom: -26rem;
+        height: 48rem;
+        bottom: -25rem;
         margin: 0;
         padding: 0;
         display: flex;
@@ -3905,8 +3906,8 @@ body.home .page-top .site-title {
 
     body.home .page-top .illustration img,
     body.home .page-top .illustration svg {
-        height: 100%;
-        width: auto
+        height: 400px;
+        width: auto;
     }
 }
 
@@ -4355,7 +4356,8 @@ nav.products-nav {
     padding-bottom: 3.6rem;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    margin-top: 12rem;
 }
 
 @media screen and (max-width:1270px) {

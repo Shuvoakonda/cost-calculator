@@ -2,64 +2,43 @@
 <html dir="rtl" lang="he-IL">
 
 <head>
-
-    <link rel="preload" as="font"
-        href="https://www.wobi.co.il/wp-content/themes/wobi-theme/assets/fonts/ploni/ploni-bold-aaa.woff2"
-        type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font"
-        href="https://www.wobi.co.il/wp-content/themes/wobi-theme/assets/fonts/ploni/ploni-regular-aaa.woff2"
-        type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font"
-        href="https://www.wobi.co.il/wp-content/themes/wobi-theme/assets/fonts/ploni/ploni-light-aaa.woff2"
-        type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font"
-        href="https://www.wobi.co.il/wp-content/themes/wobi-theme/assets/fonts/heebo/heebo-normal-300.woff2"
-        type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font"
-        href="https://www.wobi.co.il/wp-content/themes/wobi-theme/assets/fonts/heebo/heebo-normal-400.woff2"
-        type="font/woff2" crossorigin="anonymous">
-
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-
     <title></title>
     <link rel='dns-prefetch' href='' />
     <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel='stylesheet' id='style-css' href='/css/theme/style.min.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="/css/custom.css">
     <script type="text/javascript" defer src="/js/device.min.js" id="device-js"></script>
     <script type="text/javascript" src="/js/head.min.js" id="head-js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="">
-    <link rel="apple-touch-icon" sizes="180x180" href="">
-    <link rel="icon" type="image/png" sizes="32x32" href="">
-    <link rel="icon" type="image/png" sizes="16x16" href="">
-    <link rel="manifest" href="">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preload" href="" as="image" />
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js', }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-MSNQLZ');
-        window.dataLayer = window.dataLayer || [];
-    </script>
-    <!-- End Google Tag Manager -->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+    <link rel="preload" href="#" as="image" />
 </head>
 
-<body
-    class="rtl home page-template">
+<body class="rtl home page-template">
     <div id="site-wrapper">
         <header id="site-header" class="site-header" :class="{'full': scrolled, 'white': scrolled || mobileNavOpen}">
             <div class="bg"></div>
             <main class="site-header-content">
-                <a href="" class="site-home-link">
+                <a href="" class="site-home-link col-1">
                     <div class="site-logo">
                         <div class="logo">
-                            <img class="inline-svg" src="" alt="Wobi" width="124.77" height="49">
+                            <img class="inline-svg" src="" alt="" width="124.77" height="49">
                         </div>
                         <span class="tagline"></span>
                     </div>
                 </a>
-                <div class="nav-container" id="site-nav-container" :class="{open: mobileNav.open}">
+                <!-- <div class="nav-container" id="site-nav-container" :class="{open: mobileNav.open}">
                     <div class="nav-wrapper" id="nav-wrapper" :class="{open: additionalProducts.open}">
                         <nav class="site-nav" :class="{open: additionalProducts.open}">
                             <ul class="products-nav" id="products-nav" :class="{open: additionalProducts.open}">
@@ -68,7 +47,7 @@
                                         <div class="icon" style="background-image: url('/assets/icon-car.svg')">
                                         </div>
                                         <div class="labels">
-                                            <span class="prodcut-name">ביטוח רכב</span>
+                                            <span class="prodcut-name"></span>
                                         </div>
                                     </a>
                                 </li>
@@ -102,40 +81,33 @@
                             </ul>
                         </nav>
                     </div>
-                </div>
+                </div> -->
                 <div class="header-controls-container">
                     <div class="quick-call-container" id="quick-call-container"
                         :class="{'controls-hidden': quickCallControlsHidden}">
-                        <div class="quick-call-number">
-                            <a href="tel:*2744">2744*</a>
+                        <div class="quick-call-number d-none d-md-block">
+                            <a href="tel:"><i class="fas fa-phone" style="color: rgb(76, 141, 232);"></i>
+                                054-820-0039</a>
                         </div> <input type="checkbox" id="contact-actions-toggle">
                         <label for="contact-actions-toggle" class="contact-action contact-actions-toggle-label"
                             data-button="1" @click="quickCallPanel.open && toggleQuickCallPanel(false)">
-                            צרו קשר </label>
+                            Contact </label>
                         <label for="contact-actions-toggle" class="contact-actions-toggle-bg"></label>
                         <div class="contact-actions-wrapper">
                             <div class="contact-action-wrapper">
                                 <a class="contact-action" href="#" data-button="2">
-                                    שירות לקוחות </a>
+                                    Our Profile</a>
                             </div>
-                            <div class="contact-action-wrapper" :class="{open: quickCallPanel.open}">
-                                <button class="contact-action" @click="toggleQuickCallPanel" data-button="1">
-                                    מצטרפים חדשים </button>
-                            </div>
+                         
                         </div>
                     </div>
-                    <div class="site-nav-toggle" :class="{open: mobileNav.open}" @click="toggleMobileNav">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    
                     <div class="panel quick-call-panel" id="quick-call-panel" :class="{open: quickCallPanel.open}">
                         <div class="bg"></div>
                         <div class="content">
                             <header class="panel-titles">
-                                <div class="title" data-stagger-index="1">צריכים עזרה?</div>
-                                <div class="sub-title" data-stagger-index="2">נציג שלנו יצור איתכם קשר</div>
+                                <div class="title" data-stagger-index="1">Information</div>
+                                <div class="sub-title" data-stagger-index="2">User</div>
                             </header>
                             <main class="content panel-form">
                                 <quick-call-form inline-template ref="header-panel"
@@ -144,8 +116,7 @@
                                     <section class="quick-call-form-wrapper">
                                         <article class="message pending" v-if="pending" data-stagger-index="3">
                                             <div class="pending-img">
-                                                <img :src="``" alt=""
-                                                    role="presentation" width="100" height="100">
+                                                <img :src="``" alt="" role="presentation" width="100" height="100">
                                             </div>
                                         </article>
 
@@ -291,8 +262,8 @@
                                         </article>
                                     </section>
                                 </quick-call-form>
-                                
-                               
+
+
                             </main>
                         </div>
                         <i class="panel-close-button" data-stagger-index="1" @click="toggleQuickCallPanel(false)">
@@ -309,51 +280,53 @@
         <main class="site-main">
             <section class="page-top">
                 <div class="site-title">
-                    <h1>פשוט להשוות ולקנות חכם</h1>
+                    <h2 class="text-black home-title p-4">GET AN INSTANT PRICE OFFER</h2>
+                    <h6 class="text-black mt-2">?Shel we start</h6>
                 </div>
                 <nav class="products-nav">
                     <ul class="products-primary" style="--m: 0">
-                        <li class="primary" data-stagger-index="1">
-                            <a class="product-link with-label" href="#">
-                                <div class="icon" style="background-image: url('/assets/window.svg')">
-                                </div>
-                                <div class="labels">
-                                    <span class="prodcut-name">ביטוח רכב</span>
-                                    <span class="product-cta">קבלו עד 10 הצעות</span>
-                                </div>
-                                <div class="arrow">
-                                    <svg viewBox="0 0 12 28">
-                                        <polyline fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke"
-                                            stroke-linejoin="round" stroke-width="3" points="10 26 2 14 10 2">
-                                        </polyline>
-                                    </svg>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="primary" data-stagger-index="2">
-                            <a class="product-link with-label" href="#">
-                                <div class="icon" style="background-image: url('/assets/bars.svg')">
-                                </div>
-                                <div class="labels">
-                                    <span class="prodcut-name">ביטוח נסיעות לחו״ל</span>
-                                    <span class="product-cta">טוסו לחסוך</span>
-                                </div>
-                                <div class="arrow">
-                                    <svg viewBox="0 0 12 28">
-                                        <polyline fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke"
-                                            stroke-linejoin="round" stroke-width="3" points="10 26 2 14 10 2">
-                                        </polyline>
-                                    </svg>
-                                </div>
-                            </a>
-                        </li>
                         <li class="primary" data-stagger-index="3">
                             <a class="product-link with-label" href="#">
                                 <div class="icon" style="background-image: url('/assets/door.svg')">
                                 </div>
                                 <div class="labels">
-                                    <span class="prodcut-name">ביטוח דירה</span>
-                                    <span class="product-cta">להשוות ולחסוך</span>
+                                    <span class="prodcut-name text-black">Door</span>
+                                    <span class="product-cta"></span>
+                                </div>
+                                <div class="arrow">
+                                    <svg viewBox="0 0 12 28">
+                                        <polyline fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke"
+                                            stroke-linejoin="round" stroke-width="3" points="10 26 2 14 10 2">
+                                        </polyline>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="primary" data-stagger-index="1">
+                            <a class="product-link with-label" href="#">
+                                <div class="icon" style="background-image: url('/assets/window.svg')">
+                                </div>
+                                <div class="labels">
+                                    <span class="prodcut-name text-black">Windows</span>
+                                    <span class="product-cta"></span>
+                                </div>
+                                <div class="arrow">
+                                    <svg viewBox="0 0 12 28">
+                                        <polyline fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke"
+                                            stroke-linejoin="round" stroke-width="3" points="10 26 2 14 10 2">
+                                        </polyline>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="primary" data-stagger-index="4">
+                            <a class="product-link with-label" href="#">
+                                <div class="icon" style="background-image: url('/assets/rails.svg')">
+                                </div>
+                                <div class="labels">
+                                    <span class="prodcut-name text-black">Rails</span>
+                                    <span class="product-cta"></span>
                                 </div>
                                 <div class="arrow">
                                     <svg viewBox="0 0 12 28">
@@ -369,25 +342,8 @@
                                 <div class="icon" style="background-image: url('/assets/belcony.svg')">
                                 </div>
                                 <div class="labels">
-                                    <span class="prodcut-name">ביטוח משכנתא</span>
-                                    <span class="product-cta">לביטוח משכנתא</span>
-                                </div>
-                                <div class="arrow">
-                                    <svg viewBox="0 0 12 28">
-                                        <polyline fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke"
-                                            stroke-linejoin="round" stroke-width="3" points="10 26 2 14 10 2">
-                                        </polyline>
-                                    </svg>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="primary" data-stagger-index="4">
-                            <a class="product-link with-label" href="#">
-                                <div class="icon" style="background-image: url('/assets/rails.svg')">
-                                </div>
-                                <div class="labels">
-                                    <span class="prodcut-name">ביטוח משכנתא</span>
-                                    <span class="product-cta">לביטוח משכנתא</span>
+                                    <span class="prodcut-name text-black">Belcony enclosed</span>
+                                    <span class="product-cta"></span>
                                 </div>
                                 <div class="arrow">
                                     <svg viewBox="0 0 12 28">
@@ -403,8 +359,25 @@
                                 <div class="icon" style="background-image: url('/assets/parts.svg')">
                                 </div>
                                 <div class="labels">
-                                    <span class="prodcut-name">ביטוח משכנתא</span>
-                                    <span class="product-cta">לביטוח משכנתא</span>
+                                    <span class="prodcut-name text-black">Parts</span>
+                                    <span class="product-cta"></span>
+                                </div>
+                                <div class="arrow">
+                                    <svg viewBox="0 0 12 28">
+                                        <polyline fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke"
+                                            stroke-linejoin="round" stroke-width="3" points="10 26 2 14 10 2">
+                                        </polyline>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="primary" data-stagger-index="2">
+                            <a class="product-link with-label" href="#">
+                                <div class="icon" style="background-image: url('/assets/bars.svg')">
+                                </div>
+                                <div class="labels">
+                                    <span class="prodcut-name text-black">Security bars</span>
+                                    <span class="product-cta"></span>
                                 </div>
                                 <div class="arrow">
                                     <svg viewBox="0 0 12 28">
@@ -416,7 +389,7 @@
                             </a>
                         </li>
                     </ul>
-                    <ul class="products-secondary" style="--m: 1">
+                    <!-- <ul class="products-secondary" style="--m: 1">
                         <li class="secondary" data-stagger-index="5">
                             <a class="product-link " href="#">
                                 <div class="labels">
@@ -431,37 +404,61 @@
                                 </div>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="hero-wrapper">
                     <article class="hero">
-                        <div class="illustration">
-                            <img class="inline-svg" src="" alt="" width="613" height="577">
+                        <div class="illustration" style="text-align: center;">
+                            <img class="inline-svg" src="/assets/images/construction.jpg" alt=""
+                                style="margin-top: 23rem; height:400px; width: 440px;object-fit: cover;">
                         </div>
                     </article>
                 </div>
-                <a href="#main" class="scroll-link" :class="{'scroll-link-hidden': scroll.scrolled}"
-                    data-stagger-index="6">
-                    <div class="bg"></div>
-                    <span>איך זה עובד?</span>
-                </a>
-            </section> 
-            <div class="page-content-wrapper" id="main">
-                <section class="how-it-works" id="how-it-works">
-                   
-                </section> 
-               
-            </div>
-           
-        </main>
-       
+            </section>
 
+
+        </main>
+        <div class="whatsapp-box">
+            <div class="whatsapp-box-left">
+                <p>שירות לקוחות -WhatsApp</p>
+                <p>לכל שאלה או בקשה לחצו 📞</p>
+                <img src="/assets/images/support.png" alt="">
+            </div>
+            <div class="whatsapp-box-right">
+                <button id="toggle-whatsapp" onclick="toggleWP()">
+
+                    <i class="fa fa-times fa-2x" id="toggle-whatsapp-icon"></i>
+
+                </button>
+            </div>
+        </div>
     </div>
+
+
     <script type="text/javascript" defer src="/js/vue.min.js" id="vue-js"></script>
     <script type="text/javascript" defer src="/js/main.min.js" id="main-js"></script>
-    
-   
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+        integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script>
+        function toggleWP() {
+            var whatsappBoxLeft = document.querySelector('.whatsapp-box-left');
+            whatsappBoxLeft.classList.toggle('hidden');
+            var toggleIcon = document.getElementById('toggle-whatsapp-icon');
+            if (toggleIcon.classList.contains('fa-times')) {
+                toggleIcon.classList.remove('fa-times');
+                toggleIcon.classList.add('fa-chevron-right');
+            } else {
+                toggleIcon.classList.remove('fa-chevron-right');
+                toggleIcon.classList.add('fa-times');
+            }
+        }
+    </script>
+
 </body>
 
 </html>
